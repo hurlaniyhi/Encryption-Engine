@@ -27,13 +27,63 @@ body {
     height: 100vh;
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(
+      -15rem
+    ); /*we want to animate in the x direction. negaive value 
+        means it goes to left (i.e 0 opacity aplies to the right) and positive means it goes to the right*/
+  }
 
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); /*to look the way it should look*/
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); 
+  }
+
+  80% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); /*to look the way it should look*/
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem); 
+  }
+
+  80% {
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); /*to look the way it should look*/
+  }
+}
 
 .logo{
     top: 1rem;
     right: 1.5rem;
     height: 5rem;
     position: absolute;
+    /* animation: moveInRight 1s ease-out; */
     
 }
 
@@ -43,6 +93,10 @@ body {
     color: white;
     font-size: 2.9rem;
     font-weight: bold;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .subheading{
@@ -131,6 +185,19 @@ body {
   margin-top: 5vh;
   font-size: 1.45vw;
   font-weight: bold;
+  position: relative;
+  transition: all .2s;
+
+  animation: moveInBottom 1s ease-out .8s;
+  animation-fill-mode: backwards;
+}
+
+button:hover {
+  transform: translateY(-0.3rem);
+  
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+  
+    
 }
 
 .encrypted_data{
