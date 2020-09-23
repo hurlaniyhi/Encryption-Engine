@@ -1,0 +1,403 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#main_container{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0, 0.85),
+        rgba(0,0,0, 0.85)
+      ),
+      url("./gtbankOffice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+
+.logo{
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 5rem;
+    position: absolute;
+    
+}
+
+.heading{
+    text-align: center;
+    padding-top: 5vh;
+    color: white;
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+
+.subheading{
+    text-align: center;
+    padding-top: 8vh;
+    color: #e04406;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 4vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.data_to_encrypt{
+  width: 80%;
+  padding-top: 2.8vh;
+  padding-bottom: 2.8vh;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top-style: outset;
+  border-left-style: outset;
+  border-color: #e04406;
+  background-color: rgba(23, 14, 11, 0.6);
+  color: whitesmoke;
+  font-size: 1.5vw;
+}
+
+.dont_encrypt{
+  width: 72%;
+  padding-top: 1.7vh;
+  padding-bottom: 1.7vh;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 14%;
+  margin-right: 14%;
+  border-top-style: outset;
+  border-left-style: outset;
+  border-color: #e04406;
+  background-color: rgba(23, 14, 11, 0.6);
+  color: whitesmoke;
+  font-size: 1.5vw;
+  margin-top: 10px;
+}
+
+.channel {
+  border-color: #e04406;
+  background-color: rgba(23, 14, 11, 0.6);
+  font-size: 1.5vw;
+  color: rgb(101, 117, 100);
+  border-width: 2px;
+  padding-left: 17%;
+  width: 45%;
+  padding-top: 1.7vh;
+  padding-bottom: 1.7vh;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
+  border-top-style: outset;
+  border-left-style: outset;
+  margin-top: 10px;
+}
+
+.send{
+  width: 20%;
+  padding-top: 1.8vh;
+  padding-bottom: 1.8vh;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 100px;
+  margin-bottom: 8vh;
+  background-color: #e04406;
+  color: white;
+  border-bottom-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  margin-top: 5vh;
+  font-size: 1.45vw;
+  font-weight: bold;
+}
+
+.encrypted_data{
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  border-width: 2px;
+  text-align: center;
+  border-radius: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top-style: outset;
+  border-left-style: outset;
+  border-color: #e04406;
+  font-size: 1vw;
+  color: whitesmoke;
+  background-color: rgba(23, 14, 11, 0.6);
+  
+}
+
+
+textarea:focus, button:focus, input:focus, select:focus {
+    outline: none;
+}
+
+
+/* #main_container {
+ 
+  background-image: url("./gtbankOffice.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+ 
+}
+#sub {
+  width: 100%;
+  z-index: 1;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  
+}
+
+#h1 {
+  margin-left: 50px;
+  color: #e04406;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+ 
+  margin-top: 2%;
+}
+
+#h2 {
+ 
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#launch {
+  border-color: #e04406;
+  background-color: rgba(23, 14, 11, 0.6);
+
+  font-size: large;
+  
+  color: rgb(101, 117, 100);
+  border-width: 2px;
+  padding-left: 17%;
+  border-radius: 10px;
+  width: 45%;
+  height: 45px;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
+  border-top-style: outset;
+  border-left-style: outset;
+}
+
+#container {
+  margin-top: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#dte {
+  width: 80%;
+  height: 70px;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top-style: outset;
+  border-left-style: outset;
+  border-color: #e04406;
+  background-color: rgba(23, 14, 11, 0.6);
+  color: whitesmoke;
+  font-size: large;
+}
+
+#ndte {
+  width: 72%;
+  height: 45px;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 14%;
+  margin-right: 14%;
+  border-top-style: outset;
+  border-left-style: outset;
+  border-color: #e04406;
+  background-color: rgba(23, 14, 11, 0.6);
+  color: whitesmoke;
+  font-size: large;
+}
+
+.dtel {
+  padding-left: 40%;
+  padding-right: 20%;
+}
+
+.send {
+  width: 15%;
+  height: 50px;
+  text-align: center;
+  margin-left: 43%;
+  margin-right: 30%;
+  border-radius: 100px;
+  margin-bottom: 40px;
+  background-color: #e04406;
+  color: white;
+  border-bottom-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+}
+
+textarea {
+  width: 100%;
+  height: 110px;
+  border-width: 2px;
+  text-align: center;
+  border-radius: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-style: outset;
+  border-left-style: outset;
+  
+  border-color: #e04406;
+  font-size: 1vw;
+  color: whitesmoke;
+  background-color: rgba(23, 14, 11, 0.6);
+}
+
+.edl {
+  padding-left: 40%;
+
+  padding-right: 20%;
+}
+input:focus {
+  outline: none !important;
+}
+textarea:focus {
+  outline: none !important;
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+ 
+  #main_container {
+    height: 1366px;
+  }
+ 
+  textarea {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  
+
+  #main_container {
+    height: 30000px;
+  }
+ 
+  textarea {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 414px) and (min-height: 736px) {
+  #h2 {
+    padding-top: 120px;
+    padding-bottom: 230px;
+    font-size: 60px;
+  }
+  #h1 {
+    padding-bottom: 100px;
+    font-size: 50px;
+  }
+  #launch {
+    height: 100px;
+    font-size: 30px;
+    padding-left: 28%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+  }
+  #dte {
+    height: 150px;
+    font-size: 32px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #ndte {
+    height: 100px;
+    font-size: 25px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 25px;
+  }
+
+  .send {
+    height: 80px;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+ 
+
+  #main_container {
+    height: 1800px;
+  }
+ 
+  textarea {
+    margin-top: 50px;
+    height: 190px;
+    font-size: 25vm;
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 667px) {
+  
+  #main_container {
+    height: 2120px;
+  }
+  
+  textarea {
+    margin-top: 50px;
+  }
+} */

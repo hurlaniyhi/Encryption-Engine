@@ -1,0 +1,39 @@
+<div id="main_container">
+  {{!-- <div id="sub"> --}}
+    
+    <h2 id="h2" class="heading">Fintech's Encryption Engine</h2>
+    <img src="gtlogo.png" alt="GTLogo" class="logo">
+    
+  <p id="h1" class="subheading"><i>Encrypt Your Data</i></p>
+ 
+  <div id="container" class="container">
+    <form action="/" method="POST" autocomplete="off">
+                
+      <input type="text" id="dte" class="data_to_encrypt" name="inputData" value="{{theInput}}" placeholder="Enter JSON object or string to be encrypted"><br><br>
+      <input type="text" id="ndte" class="dont_encrypt" name="dontEncrypt" value="{{dontEncrypt}}" placeholder="Enter keys you don't want to encrypt (seperate with comma)"><br><br>
+      <select id="launch" class="channel" name="channel" onclick="colorChange()">
+        <option value="select" style="display: none">Select Channel</option>
+        <option value="TC_APIC_Live">TC_APIC_Live Channel</option>
+        <option value="TC_APIC_Test">TC_APIC_Test Channel</option>
+        <option value="S-Wallet">S-Wallet Channel</option>
+        <option value="others">Other Channels</option>
+      </select>
+      <button class="send" type="submit">Encrypt Data</button><br><br>
+      
+      <textarea id="edmain" class="encrypted_data" name="encryptedData" placeholder="Encrypted data" onchange="fontChange()">{{theEncrypted}}</textarea>
+      
+    </form>
+  </div>
+  
+  {{!-- </div>
+  <div id="overlay"></div> --}}
+</div>
+
+
+
+<script>
+    function colorChange(){
+        document.getElementById("launch").style.color = "whitesmoke"
+    }
+     
+</script>
