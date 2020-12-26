@@ -8,23 +8,25 @@
 
 html {
   font-size: 62.5%;
+  min-height: 100%;
 }
 
 body {
   box-sizing: border-box;
+  min-height: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0,0,0, 0.8),
+    rgba(0,0,0, 0.8)
+  ),
+  url("./gtbankOffice.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 #main_container{
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(0,0,0, 0.8),
-        rgba(0,0,0, 0.8)
-      ),
-      url("./gtbankOffice.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
+  min-height: 100%;
 }
 
 @keyframes moveInLeft {
@@ -89,7 +91,7 @@ body {
 
 .heading{
     text-align: center;
-    padding-top: 4vh;
+    padding-top: 2rem;
     color: white;
     font-size: 2.9rem;
     font-weight: bold;
@@ -101,14 +103,14 @@ body {
 
 .subheading{
     text-align: center;
-    padding-top: 8vh;
+    padding-top: 4rem;
     color: #e04406;
     font-size: 2.2rem;
     font-weight: bold;
 }
 
 .container {
-    margin-top: 4vh;
+    margin-top: 2.6rem;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -116,8 +118,8 @@ body {
 
 .data_to_encrypt{
   width: 80%;
-  padding-top: 2.8vh;
-  padding-bottom: 2.8vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   border-radius: 100px;
   margin-left: 10%;
@@ -132,8 +134,8 @@ body {
 
 .dont_encrypt{
   width: 72%;
-  padding-top: 1.7vh;
-  padding-bottom: 1.7vh;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   border-radius: 100px;
   margin-left: 14%;
@@ -156,8 +158,8 @@ body {
   padding-left: 14%;
   padding-right: 12%;
   width: 45%;
-  padding-top: 1.7vh;
-  padding-bottom: 1.7vh;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   text-align: center;
   border-radius: 100px;
   margin-left: 27.5%;
@@ -182,7 +184,7 @@ body {
   border-right-style: hidden;
   border-left-style: hidden;
   border-top-style: hidden;
-  margin-top: 5vh;
+  margin-top: 3rem;
   font-size: 1.45vw;
   font-weight: bold;
   position: relative;
@@ -202,20 +204,20 @@ button:hover {
 
 .encrypted_data{
   width: 100%;
-  padding-top: 5vh;
-  padding-bottom: 4.5vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   border-width: 2px;
   text-align: center;
   border-radius: 100px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 3rem;
+  padding-right: 3rem;
   border-top-style: outset;
   border-left-style: outset;
   border-color: #e04406;
   font-size: 1.5vw;
   color: whitesmoke;
   background-color: rgba(23, 14, 11, 0.6);
-  margin-bottom: 1vh;
+  margin-bottom: 2rem;
   
 }
 
@@ -232,7 +234,7 @@ textarea:focus, button:focus, input:focus, select:focus {
   
   .heading {
    font-size: 2.5rem;
-   padding-top: 8vh;
+   padding-top: 5.5rem;
   }
   .subheading{
       font-size: 2rem;
@@ -293,7 +295,7 @@ textarea:focus, button:focus, input:focus, select:focus {
   @media (max-width: 390px) {
   
     .heading {
-     padding-top: 9vh;
+     padding-top: 6rem;
      font-size: 2.25rem;
     }
     .subheading{
